@@ -4,8 +4,8 @@ class MemeGenerator extends Component {
   constructor() {
     super();
     this.state = {
-      topText: "abe",
-      bottomText: "chutiya hai kya?",
+      topText: "",
+      bottomText: "",
       randomImage: "http://i.imgflip.com/1bij.jpg",
       allMemeImgs: []
     };
@@ -21,6 +21,12 @@ class MemeGenerator extends Component {
       });
   }
 
+  handleChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
 
   render() {
     return (
@@ -36,7 +42,7 @@ class MemeGenerator extends Component {
           <input
             type="text"
             value={this.state.bottomText}
-            name="topText"
+            name="bottomText"
             placeholder='bottom" Text'
             onChange={this.handleChange}
           />
