@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class MemeGenerator extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  render() {
+    return <h1>MEME GENERATOR</h1>;
+  }
 }
 
-export default MemeGenerator
+export default MemeGenerator;
