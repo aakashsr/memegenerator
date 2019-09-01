@@ -21,8 +21,28 @@ class MemeGenerator extends Component {
       });
   }
 
+
   render() {
-    return <h1>MEME GENERATOR</h1>;
+    return (
+      <div>
+        <form>
+          <input
+            type="text"
+            value={this.state.topText}
+            name="topText"
+            placeholder="Top Text"
+            onChange={this.handleChange}
+          />
+          <input
+            type="text"
+            value={this.state.bottomText}
+            name="topText"
+            placeholder='bottom" Text'
+            onChange={this.handleChange}
+          />
+        </form>
+      </div>
+    );
   }
 }
 
