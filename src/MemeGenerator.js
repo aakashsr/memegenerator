@@ -3,7 +3,11 @@ import React, { Component } from "react";
 class MemeGenerator extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      topText: "abe",
+      bottomText: "chutiya hai kya?",
+      randomImage: "http://i.imgflip.com/1bij.jpg"
+    };
   }
 
   render() {
