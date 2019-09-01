@@ -46,6 +46,7 @@ class MemeGenerator extends Component {
             placeholder='bottom" Text'
             onChange={this.handleChange}
           />
+          <button>Gen</button>
         </form>
       </div>
     );
