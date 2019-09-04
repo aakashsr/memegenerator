@@ -35,6 +35,7 @@ header>p {
   position: relative;
   width: 50%;
   margin: auto;
+  height:75vh;
 }
 
 .meme>img {
